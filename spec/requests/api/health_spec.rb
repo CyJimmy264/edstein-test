@@ -8,7 +8,7 @@ describe 'Health API' do
       tags 'Health'
       produces 'application/json'
 
-      response '200', 'health ok' do
+      response '200', 'Weather API service status should be OK' do
         schema type: :object,
                properties: {
                  status: { type: :string },

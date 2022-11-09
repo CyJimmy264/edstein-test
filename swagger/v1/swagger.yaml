@@ -11,7 +11,7 @@ paths:
       - Health
       responses:
         '200':
-          description: health ok
+          description: Weather API service status should be OK
           content:
             application/json:
               schema:
