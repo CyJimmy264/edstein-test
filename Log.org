@@ -6,7 +6,7 @@
      - [ ] Client
    - [X] Rails
    - [X] RSpec
-   - [ ] RSwag
+   - [X] RSwag
 ** ТЗ
    #+begin_example
 Тестовое задание: API для статистики по погоде

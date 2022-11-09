@@ -1,0 +1,26 @@
+---
+openapi: 3.0.1
+info:
+  title: API V1
+  version: v1
+paths:
+  "/health":
+    get:
+      summary: Retrieves a health
+      tags:
+      - Health
+      responses:
+        '200':
+          description: health ok
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+servers:
+- url: http://{defaultHost}
+  variables:
+    defaultHost:
+      default: localhost:3000

@@ -7,3 +7,6 @@ AllCops:
   Exclude:
     - bin/*
     - config/**/*.rb
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: consistent_comma
