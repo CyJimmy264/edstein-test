@@ -10,3 +10,7 @@ AllCops:
 
 Style/TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: consistent_comma
+
+RSpec/EmptyExampleGroup:
+  Exclude:
+    - spec/requests/api/**/*.rb
