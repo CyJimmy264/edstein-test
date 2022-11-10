@@ -7,7 +7,7 @@ class UpdateAccuweatherData
   def call
     Rails.logger.info 'Updating Accuweather Data'
 
-    accuweather_client.historical_current_conditions.each do |data|
+    accuweather_client.historical_current_conditions.reverse_each do |data|
       update_record(data)
     rescue StandardError => e
       Rails.logger.error "Exception #{e.inspect}"

@@ -44,6 +44,7 @@ gem 'grape_on_rails_routes'
 gem 'interactor'
 gem 'rswag-api'
 gem 'rswag-ui'
+gem 'rufus-scheduler'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
