@@ -41,6 +41,7 @@ gem 'bootsnap', require: false
 gem 'faraday'
 gem 'grape'
 gem 'grape_on_rails_routes'
+gem 'interactor'
 gem 'rswag-api'
 gem 'rswag-ui'
 

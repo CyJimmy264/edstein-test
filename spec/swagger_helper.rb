@@ -30,7 +30,7 @@ RSpec.configure do |config|
               default: 'localhost:3000',
             },
           },
-        }
+        },
       ],
     },
   }

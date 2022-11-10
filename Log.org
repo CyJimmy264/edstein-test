@@ -1,10 +1,10 @@
 * Weather API
 ** Tasks
    - [X] Разобрать ТЗ
-   - [-] Accuweather
+   - [X] Accuweather
      - [X] Apikey
      - [X] Client
-     - [ ] Update interactor
+     - [X] Update interactor
    - [X] Rails
    - [X] RSpec
    - [X] RSwag
@@ -58,3 +58,9 @@ API открыт для всех, авторизация не нужна.
 ** 10/11/2022
 *** 12:03:34
     AccuweatherClient
+*** 16:28:33
+    UpdateAccuweatherData interactor
+
+    Сначала AccuweatherData.
+*** 19:58:23
+    Коммит.
