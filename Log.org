@@ -3,12 +3,15 @@
    - [X] Разобрать ТЗ
    - [-] Accuweather
      - [X] Apikey
-     - [ ] Client
+     - [X] Client
+     - [ ] Update interactor
    - [X] Rails
    - [X] RSpec
    - [X] RSwag
-   - [ ] Grape
-   - [ ] /health
+   - [X] Grape
+   - [X] /health
+   - [X] VCR
+   - [ ] Rufus
 ** ТЗ
    #+begin_example
 Тестовое задание: API для статистики по погоде
@@ -52,3 +55,6 @@ API открыт для всех, авторизация не нужна.
     Тогда дальше пожалуй RSpec и RSwag.
 *** 22:48:30
     Сделать /health на Grape.
+** 10/11/2022
+*** 12:03:34
+    AccuweatherClient

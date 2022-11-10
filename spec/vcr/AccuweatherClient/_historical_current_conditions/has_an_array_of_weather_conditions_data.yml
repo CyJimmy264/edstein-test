@@ -1,0 +1,85 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://dataservice.accuweather.com/currentconditions/v1/327146/historical/24?apikey=<ACCUWEATHER_APIKEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 10 Nov 2022 09:40:53 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '12048'
+      Connection:
+      - keep-alive
+      Server:
+      - Microsoft-IIS/10.0
+      Ratelimit-Limit:
+      - '50'
+      Ratelimit-Remaining:
+      - '32'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Allow-Headers:
+      - origin, x-requested-with, accept
+      Access-Control-Max-Age:
+      - '3628800'
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - public, max-age=436
+      Expires:
+      - Thu, 10 Nov 2022 09:48:09 GMT
+      Akamai-Grn:
+      - 0.bd74d917.1668073253.4e1943ec
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - deflate;q=0.6
+      - gzip;q=1.0
+      - identity;q=0.3
+      Host:
+      - api.accuweather.com
+      User-Agent:
+      - Faraday v2.6.0
+      X-Forwarded-For:
+      - 31.163.239.115
+      X-Forwarded-Port:
+      - '80'
+      X-Forwarded-Proto:
+      - http
+    body:
+      encoding: UTF-8
+      string: '[{"LocalObservationDateTime":"2022-11-10T00:58:00-08:00","EpochTime":1668070680,"WeatherText":"Clear","WeatherIcon":33,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":7.4,"Unit":"C","UnitType":17},"Imperial":{"Value":45.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us","Link":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us"},{"LocalObservationDateTime":"2022-11-09T23:59:00-08:00","EpochTime":1668067140,"WeatherText":"Clear","WeatherIcon":33,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":7.8,"Unit":"C","UnitType":17},"Imperial":{"Value":46.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us","Link":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us"},{"LocalObservationDateTime":"2022-11-09T22:59:00-08:00","EpochTime":1668063540,"WeatherText":"Clear","WeatherIcon":33,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":8.3,"Unit":"C","UnitType":17},"Imperial":{"Value":47.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us","Link":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us"},{"LocalObservationDateTime":"2022-11-09T21:58:00-08:00","EpochTime":1668059880,"WeatherText":"Clear","WeatherIcon":33,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":8.8,"Unit":"C","UnitType":17},"Imperial":{"Value":48.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us","Link":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us"},{"LocalObservationDateTime":"2022-11-09T20:58:00-08:00","EpochTime":1668056280,"WeatherText":"Mostly
+        clear","WeatherIcon":34,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":9.8,"Unit":"C","UnitType":17},"Imperial":{"Value":50.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us","Link":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us"},{"LocalObservationDateTime":"2022-11-09T19:58:00-08:00","EpochTime":1668052680,"WeatherText":"Clear","WeatherIcon":33,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":11.3,"Unit":"C","UnitType":17},"Imperial":{"Value":52.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us","Link":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us"},{"LocalObservationDateTime":"2022-11-09T18:58:00-08:00","EpochTime":1668049080,"WeatherText":"Clear","WeatherIcon":33,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":11.8,"Unit":"C","UnitType":17},"Imperial":{"Value":53.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us","Link":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us"},{"LocalObservationDateTime":"2022-11-09T17:58:00-08:00","EpochTime":1668045480,"WeatherText":"Mostly
+        clear","WeatherIcon":34,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":12.6,"Unit":"C","UnitType":17},"Imperial":{"Value":55.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us","Link":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us"},{"LocalObservationDateTime":"2022-11-09T16:59:00-08:00","EpochTime":1668041940,"WeatherText":"Mostly
+        clear","WeatherIcon":34,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":14.1,"Unit":"C","UnitType":17},"Imperial":{"Value":57.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us","Link":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us"},{"LocalObservationDateTime":"2022-11-09T15:58:00-08:00","EpochTime":1668038280,"WeatherText":"Partly
+        sunny","WeatherIcon":3,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":14.8,"Unit":"C","UnitType":17},"Imperial":{"Value":59.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us","Link":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us"},{"LocalObservationDateTime":"2022-11-09T14:58:00-08:00","EpochTime":1668034680,"WeatherText":"Partly
+        sunny","WeatherIcon":3,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":15.3,"Unit":"C","UnitType":17},"Imperial":{"Value":60.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us","Link":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us"},{"LocalObservationDateTime":"2022-11-09T14:04:00-08:00","EpochTime":1668031440,"WeatherText":"Partly
+        sunny","WeatherIcon":3,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":15.0,"Unit":"C","UnitType":17},"Imperial":{"Value":59.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us","Link":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us"},{"LocalObservationDateTime":"2022-11-09T12:58:00-08:00","EpochTime":1668027480,"WeatherText":"Mostly
+        cloudy","WeatherIcon":6,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":15.0,"Unit":"C","UnitType":17},"Imperial":{"Value":59.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us","Link":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us"},{"LocalObservationDateTime":"2022-11-09T11:59:00-08:00","EpochTime":1668023940,"WeatherText":"Partly
+        sunny","WeatherIcon":3,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":14.5,"Unit":"C","UnitType":17},"Imperial":{"Value":58.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us","Link":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us"},{"LocalObservationDateTime":"2022-11-09T10:59:00-08:00","EpochTime":1668020340,"WeatherText":"Mostly
+        cloudy","WeatherIcon":6,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":13.5,"Unit":"C","UnitType":17},"Imperial":{"Value":56.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us","Link":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us"},{"LocalObservationDateTime":"2022-11-09T09:58:00-08:00","EpochTime":1668016680,"WeatherText":"Mostly
+        cloudy","WeatherIcon":6,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":13.0,"Unit":"C","UnitType":17},"Imperial":{"Value":55.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us","Link":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us"},{"LocalObservationDateTime":"2022-11-09T08:59:00-08:00","EpochTime":1668013140,"WeatherText":"Mostly
+        sunny","WeatherIcon":2,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":11.5,"Unit":"C","UnitType":17},"Imperial":{"Value":53.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us","Link":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us"},{"LocalObservationDateTime":"2022-11-09T07:59:00-08:00","EpochTime":1668009540,"WeatherText":"Mostly
+        cloudy","WeatherIcon":6,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":10.1,"Unit":"C","UnitType":17},"Imperial":{"Value":50.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us","Link":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us"},{"LocalObservationDateTime":"2022-11-09T06:58:00-08:00","EpochTime":1668005880,"WeatherText":"Mostly
+        cloudy","WeatherIcon":6,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":9.5,"Unit":"C","UnitType":17},"Imperial":{"Value":49.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us","Link":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us"},{"LocalObservationDateTime":"2022-11-09T05:58:00-08:00","EpochTime":1668002280,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":9.5,"Unit":"C","UnitType":17},"Imperial":{"Value":49.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us","Link":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us"},{"LocalObservationDateTime":"2022-11-09T04:58:00-08:00","EpochTime":1667998680,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":9.5,"Unit":"C","UnitType":17},"Imperial":{"Value":49.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us","Link":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us"},{"LocalObservationDateTime":"2022-11-09T03:58:00-08:00","EpochTime":1667995080,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":9.0,"Unit":"C","UnitType":17},"Imperial":{"Value":48.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us","Link":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us"},{"LocalObservationDateTime":"2022-11-09T02:58:00-08:00","EpochTime":1667991480,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":9.3,"Unit":"C","UnitType":17},"Imperial":{"Value":49.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us","Link":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us"},{"LocalObservationDateTime":"2022-11-09T02:05:00-08:00","EpochTime":1667988300,"WeatherText":"Light
+        rain","WeatherIcon":12,"HasPrecipitation":true,"PrecipitationType":"Rain","IsDayTime":false,"Temperature":{"Metric":{"Value":9.3,"Unit":"C","UnitType":17},"Imperial":{"Value":49.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us","Link":"http://www.accuweather.com/en/us/riverside-ca/92506/current-weather/327146?lang=en-us"}]'
+  recorded_at: Thu, 10 Nov 2022 09:40:53 GMT
+recorded_with: VCR 6.1.0
