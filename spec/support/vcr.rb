@@ -10,5 +10,7 @@ VCR.configure do |config|
 
   config.configure_rspec_metadata!
 
-  config.filter_sensitive_data('<ACCUWEATHER_APIKEY>') { Rails.application.credentials.accuweather_apikey }
+  config.filter_sensitive_data('<ACCUWEATHER_APIKEY>') do
+    Rails.application.credentials.accuweather_apikey
+  end
 end

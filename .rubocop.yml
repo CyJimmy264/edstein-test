@@ -9,6 +9,9 @@ AllCops:
     - config/**/*.rb
     - db/**/*.rb
 
+Layout/LineLength:
+  Max: 98
+
 Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented_relative_to_receiver
 
