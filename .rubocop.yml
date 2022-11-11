@@ -12,6 +12,9 @@ AllCops:
 Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented_relative_to_receiver
 
+Style/ClassAndModuleChildren:
+  Enabled: false
+
 Style/NumericLiterals:
   Enabled: false
 

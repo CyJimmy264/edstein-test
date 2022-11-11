@@ -12,14 +12,15 @@
    - [X] /health
    - [X] VCR
    - [X] Rufus
-   - [ ] /weather
-     - [ ] /current
-     - [ ] /historical
-       - [ ] /
-       - [ ] /max
-       - [ ] /min
-       - [ ] /avg
-     - [ ] /by_time
+   - [X] /weather
+     - [X] /current
+     - [X] /historical
+       - [X] /
+       - [X] /max
+       - [X] /min
+       - [X] /avg
+     - [X] /by_time
+   - [ ] Cover with specs
 ** ТЗ
    #+begin_example
 Тестовое задание: API для статистики по погоде
@@ -77,3 +78,5 @@ API открыт для всех, авторизация не нужна.
     Исправить ошибки запросов к Accuweather.
 *** 14:03:03
     /weather
+*** 16:07:58
+    Покрыть тестами.
