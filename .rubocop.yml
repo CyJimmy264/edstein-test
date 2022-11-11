@@ -28,6 +28,10 @@ RSpec/EmptyExampleGroup:
   Exclude:
     - spec/requests/api/**/*.rb
 
+RSpec/ScatteredSetup:
+  Exclude:
+    - spec/requests/api/**/*.rb
+
 RSpec/ContextWording:
   Exclude:
     - spec/api/**/*.rb

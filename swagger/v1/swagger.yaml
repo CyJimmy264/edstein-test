@@ -19,6 +19,123 @@ paths:
                 properties:
                   status:
                     type: string
+  "/weather/historical/":
+    get:
+      summary: Retrieves historical conditions for past day
+      tags:
+      - Historical Weather
+      responses:
+        '200':
+          description: Historical conditions
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    epoch_time:
+                      type: integer
+                    temperature:
+                      type: number
+  "/weather/historical/max":
+    get:
+      summary: Retrieves maximum temperature for past day
+      tags:
+      - Historical Maximum Temperature
+      responses:
+        '200':
+          description: Maximum temperature
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  epoch_time:
+                    type: integer
+                  temperature:
+                    type: number
+  "/weather/historical/min":
+    get:
+      summary: Retrieves minimum temperature for past day
+      tags:
+      - Historical Minimum Temperature
+      responses:
+        '200':
+          description: Minimum temperature
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  epoch_time:
+                    type: integer
+                  temperature:
+                    type: number
+  "/weather/historical/avg":
+    get:
+      summary: Retrieves average temperature for past day
+      tags:
+      - Historical Average Temperature
+      responses:
+        '200':
+          description: Average temperature
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  average:
+                    type: number
+  "/weather/current":
+    get:
+      summary: Retrieves the current conditions
+      tags:
+      - Current Weather
+      responses:
+        '200':
+          description: Current conditions
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  epoch_time:
+                    type: integer
+                  temperature:
+                    type: number
+  "/weather/by_time/{time}":
+    get:
+      summary: Retrieves conditions by certain time
+      tags:
+      - By Time Weather
+      parameters:
+      - name: time
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Conditions by time
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  epoch_time:
+                    type: integer
+                  temperature:
+                    type: number
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
 servers:
 - url: http://{defaultHost}
   variables:
