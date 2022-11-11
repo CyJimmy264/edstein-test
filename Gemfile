@@ -39,9 +39,11 @@ gem 'bootsnap', require: false
 # gem "rack-cors"
 
 gem 'faraday'
+gem 'faraday-retry'
 gem 'grape'
 gem 'grape_on_rails_routes'
 gem 'interactor'
+gem 'resolv-replace'
 gem 'rswag-api'
 gem 'rswag-ui'
 gem 'rufus-scheduler'

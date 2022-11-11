@@ -109,6 +109,8 @@ GEM
       faraday-net_http (>= 2.0, < 3.1)
       ruby2_keywords (>= 0.0.4)
     faraday-net_http (3.0.1)
+    faraday-retry (2.0.0)
+      faraday (~> 2.0)
     fugit (1.7.2)
       et-orbi (~> 1, >= 1.2.7)
       raabro (~> 1.4)
@@ -207,6 +209,9 @@ GEM
     regexp_parser (2.6.0)
     reline (0.3.1)
       io-console (~> 0.5)
+    resolv (0.2.1)
+    resolv-replace (0.1.0)
+      resolv
     reverse_markdown (2.1.1)
       nokogiri
     rexml (3.2.5)
@@ -308,11 +313,13 @@ DEPENDENCIES
   debug
   factory_bot_rails
   faraday
+  faraday-retry
   grape
   grape_on_rails_routes
   interactor
   puma (~> 5.0)
   rails (~> 7.0.4)
+  resolv-replace
   rspec-grape
   rspec-rails
   rswag-api
